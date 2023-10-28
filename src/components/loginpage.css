@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    
+    font-size: 16px;
+}
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-div{
+    margin: auto;
+    background-color: white;
+    width: 30rem;
+    height: 35em;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0.188em 1.550em rgb(100,156,156);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+}
+.alt-login{
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+.alt-login div{
+    width: 35%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.google{
+    background-image: url('../icon/google.png');
+}
+.facebook{
+    background-image: url('../icon/facebook.png');
+}
+input{
+    border:none;
+    background-color: rgb(229,226,226);
+    height: 3rem;
+    font-size: 1.2rem;
+    width: 80%;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    /* text-align: center; */
+}
+input:focus{
+    outline-color: rgb(32,177,255);
+}
+.login-btn{
+    width: 40%;
+    height: 3rem;
+    font-family: "regular";
+    font-size: 1.4rem;
+    background-color: rgb(32,177,255);
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: center;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.login-btn:hover{
+    background-color: rgb(5, 153, 233);
+}
+.head{
+    font-size: 2rem;
+    font-family: "Bold";
+    text-transform: uppercase;
+}
+@media screen and (max-width:900px) {
+    .login-div{
+        width:21rem;
+    }
+}
+.text{
+    font-size: 1.1rem;
+}
+.text a{
+    text-decoration: none;
+    color: rgb(32,177,255);
+    transition: 0.5s;
+    font-size: 1.1rem;
+    font-family: 'bold';
+}
+.text a:hover{
+    color:rgb(5, 153, 233)
+}
